@@ -34,3 +34,37 @@ html, body {
   a:hover {
     background-color: #0056b3;
   }  
+
+  .slide-in-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .slide-in-section.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .slide-from-left,
+  .slide-from-right {
+    width: 45%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .slide-from-left {
+    transform: translateX(-100%);
+  }
+  
+  .slide-in-section.active .slide-from-left,
+  .slide-in-section.active .slide-from-right {
+    transform: translateX(0);
+    opacity: 1;
+  }
