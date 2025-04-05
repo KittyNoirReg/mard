@@ -1,15 +1,59 @@
-<gmp-map
-  center="43.4142989,-124.2301242"
-  zoom="4"
-  map-id="DEMO_MAP_ID"
-  style="height: 400px"
->
-  <gmp-advanced-marker
-    position="37.4220656,-122.0840897"
-    title="Mountain View, CA"
-  ></gmp-advanced-marker>
-  <gmp-advanced-marker
-    position="47.648994,-122.3503845"
-    title="Seattle, WA"
-  ></gmp-advanced-marker>
-</gmp-map>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project MARD - GTA Area</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+    
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Map element -->
+    <gmp-map
+      center="43.65107,-79.347015" <!-- Toronto Coordinates -->
+      zoom="10"
+      map-id="DEMO_MAP_ID"
+      style="height: 400px; width: 100%;"
+    >
+      <!-- Markers for points of interest in Toronto -->
+      <gmp-advanced-marker
+        position="43.65107,-79.347015"
+        title="Toronto City Hall"
+      ></gmp-advanced-marker>
+
+      <gmp-advanced-marker
+        position="43.6480,-79.4633"
+        title="High Park"
+      ></gmp-advanced-marker>
+
+      <gmp-advanced-marker
+        position="43.6205,-79.3890"
+        title="Toronto Islands"
+      ></gmp-advanced-marker>
+
+      <gmp-advanced-marker
+        position="43.6896,-79.2543"
+        title="Scarborough Bluffs"
+      ></gmp-advanced-marker>
+
+      <gmp-advanced-marker
+        position="43.7767,-79.3357"
+        title="Edwards Gardens"
+      ></gmp-advanced-marker>
+    </gmp-map>
+
+    <script>
+      // Dynamically load Google Maps API and callback to initMap function
+      (function() {
+        var scriptElement = document.createElement('script');})
