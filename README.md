@@ -1,2 +1,8 @@
 # MARD
-YESSSS
+Check out our website:
+https://mard-ten.vercel.app/index.html
+
+---------------------------------------------------------
+# Tools Used
+- Visual Studio Code
+- Google Map API
