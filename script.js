@@ -35,3 +35,15 @@ function initMap() {
   // Create a new map and assign it to the 'map' div in the HTML
   map = new google.maps.Map(document.getElementById('map'), options);
 }
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.slide-in-section').forEach(section => {
+  observer.observe(section);
+});
