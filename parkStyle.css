@@ -1,3 +1,9 @@
+*, html, body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: #d4ffb3;
+    color: #000000;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -86,10 +92,4 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-}
-
-body {
-    font-family: "Comfortaa", sans-serif;
-    background-color: #d4ffb3;
-    color: #333;
 }
