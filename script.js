@@ -22,3 +22,5 @@ export default function MyMap() {
 }
 
 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=AIzaSyChCjwDQqm4QzpybVp2xMOt6LJyRq0qhKE
+
+getElementById("map").innerHTML = MyMap();
