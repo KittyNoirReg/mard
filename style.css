@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
-
 /* 
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
@@ -16,10 +14,4 @@
     height: 100%;
     margin: 0;
     padding: 0;
-   background: radial-gradient(coral, khaki, lightgoldenrodyellow);
   }
-
-.pageHeader {
- font-family: "Signika", sans-serif;
- font-size: 21px;
-}
