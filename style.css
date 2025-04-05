@@ -102,14 +102,6 @@ li {
   padding: 0 20px;
 }
 
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
 div.gallery img {
   width: 100%;
   height: auto;
@@ -128,8 +120,12 @@ div.desc {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
+}
+
+.responsive a {
   background-color: none;
   border: none;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 700px) {
