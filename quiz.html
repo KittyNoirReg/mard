@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Recommendation Quiz</title>
+</head>
+<body>
+    <h1>Find Your Perfect Park</h1>
+    <form id="parkQuiz">
+        <label for="waterPreference">Do you enjoy being near water (lakes, rivers, etc.)?</label><br>
+        <input type="radio" id="waterYes" name="waterPreference" value="yes">
+        <label for="waterYes">Yes</label><br>
+        <input type="radio" id="waterNo" name="waterPreference" value="no">
+        <label for="waterNo">No</label><br><br>
+
+        <label for="hikingPreference">Do you enjoy hiking?</label><br>
+        <input type="radio" id="hikingYes" name="hikingPreference" value="yes">
+        <label for="hikingYes">Yes</label><br>
+        <input type="radio" id="hikingNo" name="hikingPreference" value="no">
+        <label for="hikingNo">No</label><br><br>
+
+        <label for="wildlifePreference">Do you like observing wildlife?</label><br>
+        <input type="radio" id="wildlifeYes" name="wildlifePreference" value="yes">
+        <label for="wildlifeYes">Yes</label><br>
+        <input type="radio" id="wildlifeNo" name="wildlifePreference" value="no">
+        <label for="wildlifeNo">No</label><br><br>
+
+        <label for="distancePreference">How far are you willing to travel?</label><br>
+        <select id="distancePreference" name="distancePreference">
+            <option value="short">Short distance (within 10 miles)</option>
+            <option value="medium">Medium distance (10-50 miles)</option>
+            <option value="long">Long distance (50+ miles)</option>
+        </select><br><br>
+
+        <button type="submit">Get Recommendation</button>
+    </form>
+</body>
+</html>
