@@ -23,6 +23,8 @@ html, body {
     display: flex; /* Create a flex container for the two columns */
     justify-content: space-between; /* Add space between the columns */
     gap: 2rem; /* Add spacing between columns */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the container */
   }
 
   .left-column,
