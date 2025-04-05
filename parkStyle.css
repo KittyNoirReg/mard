@@ -87,3 +87,9 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: #d4ffb3;
+    color: #333;
+}
