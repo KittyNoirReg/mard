@@ -1,36 +1,58 @@
-<gmp-map
-  center="43.65107,-79.347015"   <!-- Toronto's coordinates -->
-  zoom="10"                      <!-- Adjust zoom level for Toronto -->
-  map-id="DEMO_MAP_ID"
-  style="height: 400px; width: 100%;"
->
-  <!-- Marker for Toronto City Hall -->
-  <gmp-advanced-marker
-    position="43.65107,-79.347015"
-    title="Toronto City Hall"
-  ></gmp-advanced-marker>
-  
-  <!-- Marker for High Park -->
-  <gmp-advanced-marker
-    position="43.6480,-79.4633"
-    title="High Park"
-  ></gmp-advanced-marker>
-  
-  <!-- Marker for Toronto Islands -->
-  <gmp-advanced-marker
-    position="43.6205,-79.3890"
-    title="Toronto Islands"
-  ></gmp-advanced-marker>
-  
-  <!-- Marker for Scarborough Bluffs -->
-  <gmp-advanced-marker
-    position="43.6896,-79.2543"
-    title="Scarborough Bluffs"
-  ></gmp-advanced-marker>
-  
-  <!-- Marker for Edwards Gardens -->
-  <gmp-advanced-marker
-    position="43.7767,-79.3357"
-    title="Edwards Gardens"
-  ></gmp-advanced-marker>
-</gmp-map>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Toronto Map</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <!-- Load Google Maps Web Components (Beta) -->
+    <script
+      async
+      type="module"
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&v=beta&libraries=marker"
+    ></script>
+  </head>
+  <body>
+    <gmp-map
+      center="43.65107,-79.347015"
+      zoom="10"
+      style="height: 100%; width: 100%;"
+    >
+      <!-- Toronto City Hall -->
+      <gmp-advanced-marker
+        position="43.65107,-79.347015"
+        title="Toronto City Hall"
+      ></gmp-advanced-marker>
+
+      <!-- High Park -->
+      <gmp-advanced-marker
+        position="43.6480,-79.4633"
+        title="High Park"
+      ></gmp-advanced-marker>
+
+      <!-- Toronto Islands -->
+      <gmp-advanced-marker
+        position="43.6205,-79.3890"
+        title="Toronto Islands"
+      ></gmp-advanced-marker>
+
+      <!-- Scarborough Bluffs -->
+      <gmp-advanced-marker
+        position="43.6896,-79.2543"
+        title="Scarborough Bluffs"
+      ></gmp-advanced-marker>
+
+      <!-- Edwards Gardens -->
+      <gmp-advanced-marker
+        position="43.7767,-79.3357"
+        title="Edwards Gardens"
+      ></gmp-advanced-marker>
+    </gmp-map>
+  </body>
+</html>
