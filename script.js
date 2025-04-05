@@ -22,3 +22,16 @@ export default function MyMap() {
 }
 
 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=AIzaSyChCjwDQqm4QzpybVp2xMOt6LJyRq0qhKE
+
+let map;
+
+function initMap() {
+  // Map options
+  const options = {
+    zoom: 8,
+    center: { lat: 43.7, lng: -79.42 }, 
+  };
+
+  // Create a new map and assign it to the 'map' div in the HTML
+  map = new google.maps.Map(document.getElementById('map'), options);
+}
