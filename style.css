@@ -11,10 +11,12 @@ html, body {
   
   .pageHeader {
     font-size: 2em;
+    font-family: "League Spartan", sans-serif;
   }
   
   .mainDesc {
     font-size: 1.2em;
+    font-family: "Comfortaa", sans-serif;
   }
   
   a {
