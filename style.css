@@ -1,69 +1,103 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
   
-  .mainPage {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .pageHeader {
-    font-size: 2em;
-    font-family: "League Spartan", sans-serif;
-  }
-  
-  .mainDesc {
-    font-size: 1.2em;
-    font-family: "Comfortaa", sans-serif;
-  }
-  
-  a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: "Comfortaa", sans-serif;
-  }
-  
-  a:hover {
-    background-color: #0056b3;
-  }  
+.mainPage {
+  text-align: center;
+  padding: 20px;
+  background-image: url('https://img.freepik.com/free-photo/sunshine-clouds-sky-morning-background-blue-white-pastel-heaven-soft-focus-lens-flare-sunlight-abstract-blurred-cyan-gradient-peaceful-nature-open-view-out-windows-beautiful-summer-spring_1253-1094.jpg?t=st=1743876973~exp=1743880573~hmac=db02a1b7f93f7950434c7d654e5951dbf63285441d4f6e0c1a5a012b913cf4fc&w=1800');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
 
-  .slide-in-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    margin: 3rem 0;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
+.mainPage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4); /* Translucent white overlay */
+  z-index: 1;
+}
+
+/* Add this to ensure text appears above the overlay */
+.mainPage > * {
+  position: relative;
+  z-index: 2;
+}
   
-  .slide-in-section.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .slide-from-left,
-  .slide-from-right {
-    width: 45%;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 1s ease-out, opacity 1s ease-out;
-  }
-  
-  .slide-from-left {
-    transform: translateX(-100%);
-  }
-  
-  .slide-in-section.active .slide-from-left,
-  .slide-in-section.active .slide-from-right {
-    transform: translateX(0);
-    opacity: 1;
-  }
+.pageHeader {
+  font-size: 2em;
+  font-family: "League Spartan", sans-serif;
+}
+
+.mainDesc {
+  font-size: 1.2em;
+  font-family: "Comfortaa", sans-serif;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Comfortaa", sans-serif;
+}
+
+a:hover {
+  background-color: #0056b3;
+}  
+
+.slide-in-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-from-left,
+.slide-from-right {
+  width: 45%;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.slide-from-left {
+  transform: translateX(-100%);
+}
+
+.slide-in-section.active .slide-from-left,
+.slide-in-section.active .slide-from-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+li {
+  list-style: none;
+}
+
+.parkList {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
