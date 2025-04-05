@@ -8,7 +8,28 @@ html, body {
     text-align: center;
     padding: 20px;
     background-image: url('https://media.istockphoto.com/id/689952508/photo/green-grass-field-with-blue-sky-and-white-clouds-background.jpg?s=1024x1024&w=is&k=20&c=qv6IA4tQIXhy3MAMnNU1NObC_Y6mKnS94AK8Qq15Jj4=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
   }
+
+  .mainPage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Translucent white overlay */
+    z-index: 1;
+}
+
+/* Add this to ensure text appears above the overlay */
+.mainPage > * {
+    position: relative;
+    z-index: 2;
+}
   
   .pageHeader {
     font-size: 2em;
