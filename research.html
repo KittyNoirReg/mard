@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ontario Native Plants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <h1>Ontario Native Plants</h1>
+
+  <div class="plant">
+    <h2>Black-eyed Susan (Rudbeckia hirta)</h2>
+    <p><strong>Type:</strong> Wildflower</p>
+    <p><strong>Bloom Time:</strong> Summer</p>
+    <p><strong>Description:</strong> A hardy perennial with bright yellow petals and a dark center, great for pollinators.</p>
+  </div>
+
+  <div class="plant">
+    <h2>Canada Anemone (Anemone canadensis)</h2>
+    <p><strong>Type:</strong> Ground cover</p>
+    <p><strong>Bloom Time:</strong> Spring to early summer</p>
+    <p><strong>Description:</strong> Spreads easily and produces white, buttercup-like flowers. Thrives in moist soil.</p>
+  </div>
+
+  <div class="plant">
+    <h2>Eastern Red Columbine (Aquilegia canadensis)</h2>
+    <p><strong>Type:</strong> Perennial wildflower</p>
+    <p><strong>Bloom Time:</strong> Spring</p>
+    <p><strong>Description:</strong> Nodding red and yellow flowers attract hummingbirds and butterflies.</p>
+  </div>
+
+  <h1>Ontario Native Animals</h1>
+
+  <div class="animal">
+    <h2>Eastern Chipmunk (Tamias striatus)</h2>
+    <p><strong>Type:</strong> Mammal</p>
+    <p><strong>Habitat:</strong> Woodlands, gardens</p>
+    <p><strong>Description:</strong> Small, striped rodents that store food in cheek pouches. Common in forested areas and backyards.</p>
+  </div>
+
+  <div class="animal">
+    <h2>Great Blue Heron (Ardea herodias)</h2>
+    <p><strong>Type:</strong> Bird</p>
+    <p><strong>Habitat:</strong> Wetlands, rivers, lakes</p>
+    <p><strong>Description:</strong> Tall, graceful bird with a long neck and legs. Feeds on fish and amphibians.</p>
+  </div>
+
+  <div class="animal">
+    <h2>Painted Turtle (Chrysemys picta)</h2>
+    <p><strong>Type:</strong> Reptile</p>
+    <p><strong>Habitat:</strong> Ponds, marshes, slow-moving water</p>
+    <p><strong>Description:</strong> Colorful turtle with red and yellow markings. Often seen basking on logs.</p>
+  </div>
+
+  <div class="slide-in-section">
+    <div class="slide-from-left">
+      <h2>Why Native Species Matter</h2>
+    </div>
+    <div class="slide-from-right">
+      <p>Ontario’s native plants and animals are critical for supporting biodiversity, promoting healthy ecosystems, and preserving cultural heritage. Planting native helps pollinators and conserves water naturally.</p>
+    </div>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.slide-in-section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
