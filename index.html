@@ -14,10 +14,6 @@
           This is another page of the project.</p>
         <a href="index.html">Go Back to Main Page</a>
       </div>
-
-  </body>
-</html>
-
     </body>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -45,5 +41,24 @@
         document.head.appendChild(scriptElement);
       })();
     </script>
+   <gmp-map
+   center="43.65107,-79.347015"
+   zoom="10"
+   style="height: 80%; width: 100%;"
+ >
+   <!-- Markers for various parks -->
+   <gmp-advanced-marker position="43.6074,-79.5373" title="Colonel Samuel Smith Park"></gmp-advanced-marker>
+   <gmp-advanced-marker position="43.6831,-79.2524" title="Bluffer’s Park"></gmp-advanced-marker>
+   <gmp-advanced-marker position="43.6787,-79.3537" title="Crothers Woods"></gmp-advanced-marker>
+   <gmp-advanced-marker position="43.7326,-79.2077" title="East Point Park"></gmp-advanced-marker>
+   <gmp-advanced-marker position="43.6161,-79.5485" title="Etobicoke Valley Park"></gmp-advanced-marker>
+   <gmp-advanced-marker position="43.6841,-79.2860" title="Glen Stewart Ravine"></gmp-advanced-marker>
+   <gmp-advanced-marker position="43.7185,-79.6064" title="Humber Arboretum"></gmp-advanced-marker>
+ </gmp-map>
+    <script src="https://unpkg.com/@googlemaps/web-component-google-map@latest/dist/index.js"></script>
+    <script src="https://unpkg.com/@googlemaps/web-component-google-map@latest/dist/gmp-advanced-marker.js"></script>
+    <script src="https://unpkg.com/@googlemaps/web-component-google-map@latest/dist/gmp-map.js"></script>
+    <script src="https://unpkg.com/@googlemaps/web-component-google-map@latest/dist/gmp-marker.js"></script>
+    <script src="https://unpkg.com/@googlemaps/web-component-google-map@latest/dist/gmp-info-window.js"></script>
   </body>
 </html>
