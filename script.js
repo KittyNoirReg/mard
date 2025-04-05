@@ -12,26 +12,24 @@ const center = {
 };
 
 export default function MyMap() {
+  // Log the API key to ensure it's being passed correctly
+  console.log("Google Maps API Key:", process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY);
+
   return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
+    <LoadScript
+      googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
+      onLoad={() => console.log("Google Maps script loaded successfully")}
+      onError={(error) => console.error("Error loading Google Maps script:", error)}
+    >
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+        onLoad={() => console.log("Google Map loaded successfully")}
+        onError={(error) => console.error("Error loading Google Map:", error)}
+      >
         <Marker position={center} />
       </GoogleMap>
     </LoadScript>
   );
-}
-
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=AIzaSyChCjwDQqm4QzpybVp2xMOt6LJyRq0qhKE
-
-let map;
-
-function initMap() {
-  // Map options
-  const options = {
-    zoom: 8,
-    center: { lat: 43.7, lng: -79.42 }, 
-  };
-
-  // Create a new map and assign it to the 'map' div in the HTML
-  map = new google.maps.Map(document.getElementById('map'), options);
 }
