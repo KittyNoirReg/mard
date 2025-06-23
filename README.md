@@ -6,6 +6,7 @@ https://mard-ten.vercel.app/index.html
 # Tools Used
 - Visual Studio Code
 - Google Map API
+---------------------------------------------------------
 
 # Steps We Took
 Step 1: Set up the project
@@ -121,4 +122,3 @@ Features
 - Use Ollama API to recommend places
 - Add events/volunteering from APIs
 - Save plans locally or to a profile
-- Let me know if you want me to help with any of those! Want me to generate fake data or add an itinerary planner too?
